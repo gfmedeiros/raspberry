@@ -1,0 +1,10 @@
+DROP TABLE nominees IF EXISTS;
+
+CREATE TABLE nominees (
+    id IDENTITY NOT NULL PRIMARY KEY,
+    year INTEGER NOT NULL,
+    title VARCHAR NOT NULL,
+    studios VARCHAR NOT NULL,
+    producer VARCHAR NOT NULL,
+    winner BOOLEAN NOT NULL
+);
